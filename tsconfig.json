@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "module": "ESNext",
+    "target": "ES5",
+    "moduleResolution": "node",
+    "jsx": "react",
+
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "sourceMap": true,
+    "declaration": false,
+    "allowJs": true,
+    "checkJs": false,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": false,
+    "skipLibCheck": true,
+
+    "outDir": "dist",
+    "baseUrl": ".",
+    "rootDirs": ["src", "e2e", "config"],
+    "types": [
+      "react",
+      "node",
+      "testing-library__jest-dom"
+    ]
+  },
+  "include": ["src", "e2e", "config", "src/_d.d.ts"],
+
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  dev-app:
+    build:
+      context: ./
+      dockerfile: ../../build/docker/Dockerfile.dev
+    container_name: react.dev-app
+    env_file:
+      - .env
+    volumes:
+      - ../../:/app
+    ports:
+      - ${DEV_SERVER_PORT}:3000

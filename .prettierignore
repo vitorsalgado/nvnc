@@ -1,0 +1,11 @@
+.github
+.yarn
+coverage
+docs
+dist
+
+*.yml
+*.html
+*.md
+*.json
+*.d.ts

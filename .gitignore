@@ -81,7 +81,9 @@ typings/
 **/.pnp.*
 
 # project
+.stylelintcache/
+
 dist/
 out/
-.stylelintcache/
+
 Makefile.overrides

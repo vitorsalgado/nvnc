@@ -14,7 +14,7 @@
     "lint:css": "stylelint \"**/*.{css}\" --allow-empty-input",
     "lint:css:fix": "npm run lint:css -- --fix",
     "lint:ci": "npm run lint && npm run lint:css && npm run fmt:ci",
-    "fmt": "prettier 'build/**' 'config/**' 'src/**' 'e2e/**' --write --ignore-unknown",
+    "fmt": "prettier 'build/**' 'config/**' 'site/**' 'e2e/**' --write --ignore-unknown",
     "fmt:ci": "npm run fmt --check",
     "prepare": "husky install",
     "_postinstall": "husky install",

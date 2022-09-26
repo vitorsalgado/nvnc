@@ -17,7 +17,7 @@ const config: WebPack.Configuration = {
 
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
-    modules: ['node_modules', 'src'],
+    modules: ['node_modules', Config.siteSources],
   },
 
   ignoreWarnings: [/Failed to parse source map/],

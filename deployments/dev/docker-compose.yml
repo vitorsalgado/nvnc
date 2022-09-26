@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  dev-app:
+  site:
     build:
       context: ./
       dockerfile: ../../build/docker/Dockerfile.dev
-    container_name: react.dev-app
+    container_name: nvnc.site
     env_file:
       - .env
     volumes:

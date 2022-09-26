@@ -23,11 +23,13 @@ export default {
     incognito: EnvVars.TEST_INCOGNITO,
   },
 
+  siteSources: 'site',
+
   paths: {
-    sourcesRoot: resolvePath('src'),
+    sourcesRoot: resolvePath('site'),
     buildDestination: resolvePath('dist'),
-    indexHTML: resolvePath('./src/index.html'),
-    applicationEntrypoint: resolvePath('./src/index.tsx'),
+    indexHTML: resolvePath('./site/index.html'),
+    applicationEntrypoint: resolvePath('./site/index.tsx'),
   },
 
   vars: EnvVars,

@@ -20,7 +20,7 @@ export default ({ start = [], end = [] }: Arg): WebPack.WebpackPluginInstance[] 
       patterns: [
         {
           force: true,
-          from: resolvePath('src/manifest.json'),
+          from: resolvePath(`${Config.siteSources}/manifest.json`),
           to: Config.paths.buildDestination,
           transform: function (content) {
             return Buffer.from(
@@ -32,7 +32,7 @@ export default ({ start = [], end = [] }: Arg): WebPack.WebpackPluginInstance[] 
         },
         {
           force: true,
-          from: resolvePath('src/favicon.ico'),
+          from: resolvePath(`${Config.siteSources}/favicon.ico`),
           to: Config.paths.buildDestination,
         },
       ],

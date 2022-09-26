@@ -1,1 +1,11 @@
 # nvnc
+
+## envs
+
+```
+SKIP_PREFLIGHT_CHECK=true
+BROWSER=none
+
+DEV_SERVER_PORT=3000
+PUBLIC_URL=/
+```
